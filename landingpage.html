@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+  </head>
+  <style>
+    /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color:#fff ;
+  padding: 15px 10px;
+  color: #000;
+  font-size: 20px;
+  font-weight: 800;
+  position:fixed;
+  width:100%;
+}
+
+header nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: #174de0;
+  padding: 0 10px ;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 24px;
+  margin-left: 15px ;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background-image: url("landingpage.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  color: #000;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #06b4e9;
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #f3f6f7;
+  color:#046ac9;
+}
+
+/* Features Section */
+.features-section {
+  background-color: #f9f8e9;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.features-grid {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.feature {
+  width: 30%;
+}
+
+.feature img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.feature h3 {
+  margin: 15px 0;
+}
+/* CTA Section */
+.cta-section {
+  background-color: #e7ddff;
+  text-align: center;
+  padding: 50px 30px;
+  }
+#cta p{
+  margin-bottom: 40px;
+}
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+  </style>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <nav>
+        <div class="logo">LANDING PAGE</div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#cta">Sign up</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Welcome to My Page</h1>
+        <p>Discover the power of simplicity.</p>
+        <a href="#cta" class="cta-button">Get Started</a>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+      <h2>Features That Stand Out</h2>
+      <div class="features-grid">
+        <div class="feature">
+          <img src="image 1.jpeg" alt="Feature 1" />
+          <p>Easy to use and fast to set up</p>
+        </div>
+        <div class="feature">
+          <img src="image2.jpeg" alt="Feature 2" />
+          <p>Customizable to fit your needs</p>
+        </div>
+        <div class="feature">
+          <img src="image 3.png" alt="Feature 3" />
+          <p>Secure and reliable, always</p>
+        </div>
+      </div>
+    </section>
+    <!-- Call to Action Section -->
+    <section id="cta" class="cta-section">
+      <h2>Join Us Today</h2>
+      <p>Sign up now to experience the difference!</p>
+      <a href="#" class="cta-button">Sign Up Now</a>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>© made by Udayagiri Fowjiya 2024  </p>
+    </footer>
+  </body>
+</html>
